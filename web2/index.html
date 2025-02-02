@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUBE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <img src="https://res.cloudinary.com/drp5g9cpn/image/upload/v1738481830/QUB.AX-22c60ed8_ji7pys.webp" alt="logo" height="102px">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#" id="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="products">
+            <div class="product-card">
+                <img src="https://res.cloudinary.com/drp5g9cpn/image/upload/v1738477936/2BfG25hwLRxJjY6L3WZvMV-320-80_qiwmbb.webp" alt="Laptop" height="300">
+                <h3>Laptop</h3>
+                <p>High-performance laptop with 16GB RAM.</p>
+                <p class="price"> &#8377;65,000 </p>
+                <button onclick="addToCart('Laptop', 65000)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://res.cloudinary.com/drp5g9cpn/image/upload/v1738485688/iphone-16-pro-square_bgu58d.webp" alt="Smartphone" height="300px">
+                <h3>Smartphone</h3>
+                <p>Latest model with 256GB storage.</p>
+                <p class="price">&#8377; 1,37,900</p>
+                <button onclick="addToCart('Smartphone', 137900)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://res.cloudinary.com/drp5g9cpn/image/upload/v1738477936/SonyXM5Black41024x1024_hknm7z.webp" alt="Headphones" height="300px">
+                <h3>Headphones</h3>
+                <p>Noise-cancelling over-ear headphones.</p>
+                <p class="price"> &#8377; 45,000</p>
+                <button onclick="addToCart('Headphones', 45000)">Add to Cart</button>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&#128591; Thanks For Shopping</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
